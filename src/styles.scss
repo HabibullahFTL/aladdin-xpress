@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.hero{
+    background-image: url("assets/images/cover.png");
+    background-size: cover;
+    background-position: 0px;
+    background-color:rgba(0, 0, 0, 0.8);
+    height: 400px;
+}
+.app-icon{
+    width: 100px;
+    margin: 10px;
+}

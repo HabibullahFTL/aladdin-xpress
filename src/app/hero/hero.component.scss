@@ -1,0 +1,33 @@
+.hero{
+    .hero-content{
+        height: 400px;
+        
+        h2{
+            color: #fff;
+            font-size: 3em;
+        }
+        .order-box{
+            display: flex;
+            height: 50px;
+            width: 500px;
+            border-radius: 50px;
+            background: #fff;
+
+            .order-input{
+                border-radius: 50px 0 0 50px;
+                padding: 15px;
+                width: calc(100% - 100px);
+                border: 0;
+                outline: none;
+            }
+            .order-btn{
+                background: #f15a25;
+                color: #fff;
+                font-weight: 600;
+                border: 0;
+                border-radius: 0 50px 50px 0;
+                width: 100px;
+            }
+        }
+    }
+}

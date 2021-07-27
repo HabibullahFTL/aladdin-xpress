@@ -1,0 +1,29 @@
+.navbar {
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            padding-left:  20px;
+            padding-right:  20px;
+            font-weight: 600;
+        }
+        .nav-link:hover{
+            color: #f15a25;
+        }
+        .btn-custom {
+            border: 1px solid #f15a25;
+            color: #f15a25;
+            font-weight: 600;
+            padding: 7px 30px;
+            border-radius: 30px;
+        }
+        .btn-custom:hover{
+            background: #f15a25;
+            color: #fff;
+        }
+    }
+}
