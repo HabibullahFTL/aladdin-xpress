@@ -1,4 +1,4 @@
-<div class="cookie">
+<div class="cookie" *ngIf="isShowCookie">
     <div class="d-flex justify-content-between">
         <h2>
             <i class="fas fa-cookie-bite"></i>
@@ -14,10 +14,10 @@
     </p>
     <div class="d-flex justify-content-between">
         <div class="btn-group">
-            <button class="btn-light-green">Összes elfogadása</button>
-            <button class="btn-dark">Összes elutasítása</button>
+            <button class="btn-light-green" (click)="acceptCookie('accepted_all')">Összes elfogadása</button>
+            <button class="btn-dark" (click)="rejectCookie()">Összes elutasítása</button>
         </div>
-        <button class="btn-light-green">Elfogadás</button>
+        <button class="btn-light-green" (click)="acceptCookie('accepted')">Elfogadás</button>
     </div>
     <div class="instruction">
         <h2>Sütinyilatkozat</h2>

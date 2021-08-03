@@ -9,9 +9,9 @@ import { OurMissionComponent } from './our-mission/our-mission.component';
 import { HowWorksComponent } from './how-works/how-works.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
-import { HomeComponent } from './home/home.component';
-import { CookieComponent } from './cookie/cookie.component';
-import { TableComponent } from './table/table.component';
+import { HomeComponent } from './custom-cookie-table/home/home.component';
+import { CookieComponent } from './custom-cookie-table/cookie/cookie.component';
+import { TableComponent } from './custom-cookie-table/table/table.component';
 
 @NgModule({
   declarations: [
