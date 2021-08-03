@@ -1,0 +1,99 @@
+.home{
+    font-family: Arial, Helvetica, sans-serif;
+    .content-area{
+        margin: 10px;
+        .sidebar{
+            margin: 20px auto;
+
+            .menu{
+                list-style: none;
+                padding-left: 0;
+                
+                .menu-item{
+                    display: grid;
+                    grid-template-columns: 1fr 80px;
+                    font-size: 20px;
+                    line-height: 35px;
+
+                    a{
+                        padding: 5px 10px;
+                        text-decoration: none;
+                        color: #222;
+                    }
+                    .item-circle-container{
+                        i{
+                            position: relative;
+                            padding: 5px 10px;
+                            font-size: 30px;
+                            line-height: 30px;
+                            color: #E5E5E5;
+                            z-index: 1;
+                        }
+                        i::after{
+                            content: "";
+                            position: absolute;
+                            width: 7px;
+                            height: 50px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background: #E5E5E5;
+                            z-index: -1;
+                        }
+                    }
+                    .last-item{
+                        i::after{
+                            height: 10px;
+                        }
+                    }
+                }
+                .menu-item:hover{
+                    background: #B1DDC4;
+                }
+                .menu-item.active{
+                    background: #B1DDC4;
+                    
+                    .item-circle-container{
+                        line-height: 30px;
+                        i{
+                            padding: 5px 10px;
+                            font-size: 30px;
+                            line-height: 30px;
+                            color: #006633;
+                        }
+                        i::after{
+                            background: #006633;
+                        }
+                    }
+                }
+            }
+            .additional-info{
+                background: #006633;
+                padding: 15px;
+                color: #fff;
+
+                h5{
+                    padding: 5px 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    .home{
+        .content-area{
+            display: grid;
+            grid-template-columns: 300px 1fr;
+
+            .sidebar{
+                margin: 0 auto;
+
+                .menu{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
