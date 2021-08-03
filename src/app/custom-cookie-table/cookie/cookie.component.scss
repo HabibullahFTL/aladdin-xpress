@@ -1,0 +1,44 @@
+.cookie {
+  margin: 10px;
+
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  .bg-white {
+    background: white;
+  }
+  .border-none {
+    border: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  .btn-light-green {
+    background: #55ae3a;
+    margin: auto 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #adadad;
+    color: #fff;
+  }
+  .btn-dark {
+    background: #363636;
+    margin: auto 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #adadad;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .instruction {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+}

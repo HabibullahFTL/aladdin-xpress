@@ -1,0 +1,34 @@
+.custom-table {
+  text-align: center;
+  border-collapse: collapse;
+  min-width: 590px;
+
+  thead {
+    background: #006633;
+    color: #fff;
+
+    th {
+      padding: 5px 10px;
+    }
+  }
+
+  tbody {
+    background: #b1ddc4;
+
+    td {
+      padding: 5px 10px;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.table-area {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .table-area {
+    overflow: hidden !important;
+  }
+}
